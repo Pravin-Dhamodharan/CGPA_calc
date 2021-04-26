@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>CGPA Calculator Online</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <style>
+    .container
+    {
+      background-color: rgb(185, 255, 194) ;
+    }
+</style>
+  </head>
+<body>
+  <div class="container-fluid">
+    <h1><center>CGPA Calculator Online</h1></center></h1>
+  </div>
+<fieldset>
+  <div class="container "><center>
+    <div class="form-group col-md-7">
+      <label>SEM 1</label>
+      <input type="text" class="form-control" id = "m1">
+      <label>SEM 2</label>
+      <input type="text " class="form-control" id = "m2">
+      <label>SEM 3</label>
+      <input type="text" class="form-control" id = "m3">
+      <label>SEM 4</label>
+      <input type="text" class="form-control" id = "m4">
+      <label>SEM 5</label>
+      <input type="text" class="form-control" id = "m5">
+      <label>SEM 6</label>
+      <input type="text" class="form-control" id = "m6">
+      <label>SEM 7</label>
+      <input type="text" class="form-control" id = "m7">
+      <label>SEM 8</label>
+      <input type="text" class="form-control" id = "m8">
+      <label>Total SEM</label>
+      <input type="text" class="form-control" id = "ts"><hr></center>
+      
+      <div class="container"></div>
+      <button type="button"  name="Submit" onclick="result()" class= "btn btn-danger btn-block">Calculate</button>
+    </div>
+
+</fieldset>
+  </div>
+  <script type="text/javascript">
+    function result()
+     {
+
+      var s1= Number(document.getElementById("m1").value);
+      var s2= Number(document.getElementById("m2").value);
+      var s3= Number(document.getElementById("m3").value);
+      var s4= Number(document.getElementById("m4").value);
+      var s5= Number(document.getElementById("m5").value);
+      var s6= Number(document.getElementById("m6").value);
+      var s7= Number(document.getElementById("m7").value);
+      var s8= Number(document.getElementById("m8").value);
+      var Total=Number(document.getElementById("ts").value);
+      var sem = (s1+s2+s3+s4+s5+s6+s7+s8);
+      var rs= sem/Total;
+      alert("Your CGPA is "+rs);
+     }
+
+  </script>
+</body>
+</html>
